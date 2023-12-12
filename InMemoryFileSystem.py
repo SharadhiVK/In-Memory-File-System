@@ -36,7 +36,7 @@ class InMemoryFileSystem:
         Create a new directory.
 
         Parameters:
-            directory_name (str): The name of the new directory.
+            directory_name (str): The name of the new directory
         """
         new_directory = FileNode(directory_name, is_directory=True)
         self.current_directory.children.append(new_directory)
