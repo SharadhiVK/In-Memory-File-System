@@ -38,7 +38,47 @@ This project implements a simple in-memory file system in [Python](https://www.p
    cd InMemoryFileSystem   
 2. Execute the program:
    python script.py
-3. Follow the on-screen instructions to interact with the in-memory file system.
+   
+4. Follow the on-screen instructions to interact with the in-memory file system.
+
+###  Testing
+Running Tests
+To run the unit tests for the In-Memory File System, use the following command:
+python -m unittest test_InMemoryFileSystem.py
+
+Test Coverage
+To measure test coverage using coverage.py, run the following commands:
+
+Install coverage.py (if not installed)
+pip install coverage
+
+Measure test coverage
+coverage run -m unittest test_InMemoryFileSystem.py
+coverage report -m
+
+Test Dependencies
+Make sure to install the test dependencies before running the tests:
+pip install -r requirements-test.txt
+
+Sample Outputs
+After running the tests, you should see an output similar to the following:
+
+...
+----------------------------------------------------------------------
+Ran 7 tests in 0.002s
+
+FAILED (failures=2, errors=3)
+
+
+
+
+###  Troubleshooting
+If you encounter issues during testing, consider the following troubleshooting tips:
+
+-Ensure that you have the correct dependencies installed using pip install -r requirements.txt.
+-Double-check that the test data and file paths specified in the test cases are accurate
+
+
 
 
 
