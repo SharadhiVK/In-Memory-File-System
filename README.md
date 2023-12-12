@@ -30,37 +30,53 @@ This project implements a simple in-memory file system in [Python](https://www.p
 
 - [Python](https://www.python.org/) (version 3.x)
 
-### Running the Program
+### Implemented Functionalities:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/SharadhiVK/InMemoryFileSystem.git
-   cd InMemoryFileSystem   
-2. Execute the program:
-   python script.py
-   
-4. Follow the on-screen instructions to interact with the in-memory file system.
+The In-Memory File System has been designed to provide the following functionalities:
 
-###  Testing
-Running Tests
-To run the unit tests for the In-Memory File System, use the following command:
-python -m unittest test_InMemoryFileSystem.py
+1. **Directory Management:**
+   - Creating new directories.
+   - Changing the current working directory.
+   - Listing the contents of a directory.
 
-Test Coverage
-To measure test coverage using coverage.py, run the following commands:
+2. **File Operations:**
+   - Creating empty files.
+   - Writing and displaying the contents of files.
+   - Copying, moving, and removing files.
 
-Install coverage.py (if not installed)
-pip install coverage
+3. **Search and Display:**
+   - Searching for a pattern in a file and displaying matching lines.
 
-Measure test coverage
-coverage run -m unittest test_InMemoryFileSystem.py
-coverage report -m
+4. **State Persistence:**
+   - Saving and loading the file system state to/from a file.
 
-Test Dependencies
+### Improvements to Design:
+
+- Implemented a robust file node structure to represent files and directories.
+- Ensured proper handling of edge cases, such as attempting to copy a file to a non-existent directory.
+- Optimized file and directory navigation for better performance.
+
+### Instructions for Running and Testing:
+
+1. **Run the Program:**
+   - Clone the repository to your local machine.
+   - Ensure you have Python installed.
+   - Run the program using the command: `python main.py`
+
+2. **Run Tests:**
+   - Install test dependencies: `pip install -r requirements-test.txt`
+   - Run unit tests: `python -m unittest test_InMemoryFileSystem.py`
+
+3. **View Test Coverage:**
+   - Install coverage.py: `pip install coverage`
+   - Measure test coverage: `coverage run -m unittest test_InMemoryFileSystem.py`
+   - View coverage report: `coverage report -m`
+
+### Test Dependencies
 Make sure to install the test dependencies before running the tests:
 pip install -r requirements-test.txt
 
-Sample Outputs
+### Sample Output
 After running the tests, you should see an output similar to the following:
 
 ...
@@ -82,6 +98,4 @@ If you encounter issues during testing, consider the following troubleshooting t
 
 
 
-
-The test_InMemoryFileSystem.py provides unit test cases for the code.
 
